@@ -87,11 +87,11 @@ function BasketPage() {
                 )}
               </div>
 
-              <div className="flex-grow relative">
-                <h2 className="text-xl font-semibold text-gray-800 absolute bottom-[-70]">
+              <div className="flex-grow">
+                <h2 className="text-xl font-semibold text-gray-800 text-justify">
                   {item.product.name}
                 </h2>
-                <p className="absolute top-28 text-gray-800 font-bold">
+                <p className="text-gray-800 font-bold float-right">
                   Price: $
                   {((item.product.price ?? 0) * item.quantity).toFixed(2)}
                 </p>
