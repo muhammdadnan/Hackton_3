@@ -4,6 +4,7 @@ import Link from "next/link";
 import Form from "next/form";
 import { PackageIcon, TrolleyIcon } from "@sanity/icons";
 import useBasketStore from "@/app/(store)/store";
+import Image from "next/image";
 
 const Header = () => {
   const { user } = useUser();
@@ -23,10 +24,13 @@ const Header = () => {
       {/* Top row */}
       <div className="flex w-full flex-wrap items-center justify-between">
         <Link
-          href="/"
-          className="justify-center  text-2xl font-bold text-blue-500 hover:opacity-50 cursor-pointer mx-auto sm:mx-0"
-        >
-          Shopr
+          href="/">
+          <Image 
+          src="/logo-adnan.jpg"
+          alt="Logo"
+          width={200}
+          height={150}
+          />
         </Link>
         <Form
           action="/search"
